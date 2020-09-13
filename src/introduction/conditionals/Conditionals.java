@@ -58,5 +58,43 @@ public class Conditionals {
     // Ternary Magic
     result = a > b ? a > c ? a : c : b > c ? b : c;
     System.out.println("Max of 3: " + result);
+
+    // Switch
+
+    int dayOfWeek = 8;
+
+    switch (dayOfWeek) {
+      case 1:
+        System.out.println("I am 1");
+        break;
+
+      case 2:
+        System.out.println("I am 2");
+        break;
+
+      case 3:
+        System.out.println("I am 3");
+        break;
+
+      case 4:
+        System.out.println("I am 4");
+        break;
+
+      case 5:
+        System.out.println("I am 5");
+        break;
+
+      case 6:
+        System.out.println("I am 6");
+        break;
+
+      case 7:
+      case 8:
+        System.out.println("I am 7 or 8");
+        break;
+
+      default:
+        System.out.println("I am default");
+    }
   }
 }
