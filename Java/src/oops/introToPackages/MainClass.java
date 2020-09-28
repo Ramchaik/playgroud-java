@@ -1,3 +1,5 @@
+package introToPackages;
+
 class Cat {
   boolean hasFur;
   int legs, eyes;
