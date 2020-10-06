@@ -1,3 +1,5 @@
+package arraysAndStrings;
+
 import java.util.Scanner;
 
 public class CheckPermutation {

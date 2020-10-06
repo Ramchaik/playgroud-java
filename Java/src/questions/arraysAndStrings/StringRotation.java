@@ -1,3 +1,4 @@
+package arraysAndStrings;
 import java.util.Scanner;
 
 public class StringRotation {
