@@ -37,15 +37,16 @@ public class LinkedListNode {
 
     return head;
   }
-  
+
   static void printList(LinkedListNode head) {
     LinkedListNode current = head;
 
-    while(current.next != null) {
+    while (current.next != null) {
       System.out.print(current.data + " -> ");
       current = current.next;
     }
-      System.out.print(" X ");
-      System.out.println();
+
+    System.out.print(current.data);
+    System.out.println();
   }
 }
