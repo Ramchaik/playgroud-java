@@ -1,7 +1,7 @@
 public class MyLinkedList<E> {
   Node<E> head;
 
-  void add(E data) {
+  public void add(E data) {
     Node<E> toAdd = new Node<E>(data);
 
     if (this.isEmpty()) {
@@ -15,11 +15,43 @@ public class MyLinkedList<E> {
     temp.next = toAdd;
   }
 
-  boolean isEmpty() {
+  public boolean isEmpty() {
     return head == null;
   }
 
-  void print() {
+  public E removeLast() throws Exception {
+    Node<E> temp = head;
+
+    if (head == null) {
+      throw new Exception("Trying to remove element from empty list");
+    }
+
+    if (temp.next == null) {
+      Node<E> toRemove = head;
+      head = null;
+
+      return toRemove.data;
+    }
+
+    while (temp.next.next != null) 
+      temp = temp.next;
+
+    Node<E> toRemove = temp.next;
+    temp.next = null;
+
+    return toRemove.data;
+  }
+
+  public E getLast() throws Exception {
+    Node<E> temp = head;
+
+    while (temp.next != null) 
+      temp = temp.next;
+
+    return temp.data;
+  }
+
+  public void print() {
     Node<E> temp = head;
     while (temp != null) {
       System.out.print(temp.data + " ");
