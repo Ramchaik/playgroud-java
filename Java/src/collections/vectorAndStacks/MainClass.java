@@ -22,7 +22,6 @@ public class MainClass {
 
     System.out.println("Pop: " +  S.pop());
     System.out.println("Peek: "  + S.peek());
-
   }
   
 }

@@ -1,4 +1,3 @@
-
 public class MyStack<T> {
   private MyLinkedList<T> list = new MyLinkedList<>();
 
