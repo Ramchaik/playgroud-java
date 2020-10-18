@@ -89,16 +89,61 @@ public class SumLists {
     revSumList.print();
 
     System.out.println();
-    System.out.println();
-    System.out.println();
+
+    System.out.println("------------------------");
 
     list1.reverseList().print(); 
     list2.reverseList().print(); 
-
     System.out.println("------------------------");
 
     LinkedList<Integer> l = new LinkedList<>();
     addLists(list1.getHead(), list2.getHead(), 0, l);
     l.print();
+
+    revAddList(list1, list2);
+  }
+
+  static LinkedList<Integer> padList(LinkedList<Integer> l, int padding) {
+    for (int i = 0; i < padding; ++i) {
+      l.addToHead(0);
+    }
+    
+    return l;
+  }
+
+  static void revAddList(LinkedList<Integer> l1, LinkedList<Integer> l2) {
+    int len1 = l1.length(); 
+    int len2 = l2.length(); 
+
+    if (len1 < len2) {
+      l1 = padList(l1, len2 - len1);
+    } else {
+      l2 = padList(l2, len1 - len2);
+    }
+
+    PartialSum result = revAddListHelper(l1.getHead(), l2.getHead());
+
+    result.list.print();
+  }
+
+  static PartialSum revAddListHelper(Node<Integer> l1, Node<Integer> l2) {
+    if (l1 == null && l2 == null) {
+      PartialSum sum = new PartialSum();
+      sum.list = new LinkedList<Integer>();
+      return sum;
+    }
+
+    PartialSum sum = revAddListHelper(l1.next, l2.next);
+    int val = sum.carry + l1.data + l2.data;
+
+    sum.list.addToHead(val % 10);
+    sum.carry = val / 10;
+
+    return sum;
+  }
+
+  static class PartialSum {
+    public LinkedList<Integer> list = null;
+    public int carry = 0;
   }
 }
