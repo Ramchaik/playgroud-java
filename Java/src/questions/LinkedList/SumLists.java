@@ -85,11 +85,9 @@ public class SumLists {
 
     finalList.print();
 
-    System.out.println(" *** For non reversed list *** ");
+    System.out.println("\n *** For non reversed list *** \n");
     LinkedList<Integer> revSumList = sumOfList(list1.reverseList().getHead(), list2.reverseList().getHead()).reverseList();
 
     revSumList.print();
-    
-
   }
 }
