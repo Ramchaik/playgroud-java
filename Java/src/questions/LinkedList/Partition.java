@@ -8,7 +8,6 @@ public class Partition {
 
     LinkedList<Integer> list = new LinkedList<Integer>();
   
-    System.out.flush();
     System.out.println("Enter -1 to End the program.");
     while (true) {
       int data = sc.nextInt();
