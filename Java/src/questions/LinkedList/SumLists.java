@@ -24,11 +24,9 @@ public class SumLists {
 
     while (l1 != null && l2 != null) {
       int data = (l1.data + l2.data + carry);
+      carry = data / 10;
 
-      carry = (carry + data) / 10;
-      data %= 10;
-
-      fList.add(data);
+      fList.add(data % 10);
 
       l1 = l1.next;
       l2 = l2.next;
@@ -37,19 +35,17 @@ public class SumLists {
     if (l2 != null) {
       while (l2 != null) {
         int data = (l2.data + carry);
-        carry = (carry + data) / 10;
-        data %= 10;
+        carry = data / 10;
 
-        fList.add(data);
+        fList.add(data % 10);
         l2 = l2.next;
       }
     } else {
       while (l1 != null) {
         int data = (l1.data + carry);
-        carry = (carry + data) / 10;
-        data %= 10;
+        carry = data / 10;
         
-        fList.add(data);
+        fList.add(data % 10);
         l1 = l1.next;
       }
     }
@@ -61,17 +57,19 @@ public class SumLists {
     return fList;
   }
 
-  public static Node<Integer> reverseList(Node<Integer> head) {
-    Node<Integer> next = null, prev = null, cur = head;
+  static void addLists(Node<Integer> l1, Node<Integer> l2, int carry, LinkedList<Integer> list) {
+    if (l1 == null && l2 == null && carry == 0) return;
 
-    while (cur != null) {
-      next = cur.next;
-      cur.next = prev;
-      prev = cur;
-      cur = next;
+    int data = carry;
+
+    if (l1 != null) data += l1.data;
+    if (l2 != null) data += l2.data;
+
+
+    if (l1 != null || l2 != null) {
+      addLists(l1 == null ? null : l1.next, l2 == null ? null : l2.next, data >= 10 ? 1 : 0, list);
+      list.add(data % 10);
     }
-
-    return prev;
   }
 
   public static void main(String[] args) {
@@ -89,5 +87,18 @@ public class SumLists {
     LinkedList<Integer> revSumList = sumOfList(list1.reverseList().getHead(), list2.reverseList().getHead()).reverseList();
 
     revSumList.print();
+
+    System.out.println();
+    System.out.println();
+    System.out.println();
+
+    list1.reverseList().print(); 
+    list2.reverseList().print(); 
+
+    System.out.println("------------------------");
+
+    LinkedList<Integer> l = new LinkedList<>();
+    addLists(list1.getHead(), list2.getHead(), 0, l);
+    l.print();
   }
 }
