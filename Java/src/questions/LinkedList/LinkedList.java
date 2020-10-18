@@ -39,6 +39,18 @@ public class LinkedList<T> {
 
     head = prev;
     return this;
+  } 
+
+  public int length() {
+    Node<T> temp = head;
+    int len = 0;
+
+    while(temp != null) {
+      len++;
+      temp = temp.next;
+    }
+
+    return len;
   }
 
   public void print() {
