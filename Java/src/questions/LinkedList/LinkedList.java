@@ -27,6 +27,20 @@ public class LinkedList<T> {
     this.head = head;
   }
 
+  public LinkedList<T> reverseList() {
+    Node<T> prev = null, next = null, cur = head;
+
+    while (cur != null) {
+      next = cur.next;
+      cur.next = prev;
+      prev = cur;
+      cur = next;
+    }
+
+    head = prev;
+    return this;
+  }
+
   public void print() {
     Node<T> temp = head;
 
