@@ -53,6 +53,16 @@ public class LinkedList<T> {
     return len;
   }
 
+  public void addToHead(T data) {
+    Node<T> node = new Node<T>(data);
+
+    if (head != null) {
+      node.next = head;
+    }
+
+    head = node;
+  }
+
   public void print() {
     Node<T> temp = head;
 
