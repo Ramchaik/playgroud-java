@@ -1,4 +1,4 @@
-package inheritance;
+package oops.inheritance;
 
 public class Teacher extends Person {
   public Teacher(String name) {

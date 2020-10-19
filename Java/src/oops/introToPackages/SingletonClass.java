@@ -1,4 +1,4 @@
-package introToPackages;
+package oops.introToPackages;
 
 class Singleton {
   private static Singleton singleton_instance = null;

@@ -1,4 +1,4 @@
-package strings;
+package introduction.strings;
 
 public class ReverseStringByWords {
   public static void main(String[] args) {
@@ -14,4 +14,5 @@ public class ReverseStringByWords {
     System.out.println(s);
     System.out.println(reveresedStr);
 
+  }
 }

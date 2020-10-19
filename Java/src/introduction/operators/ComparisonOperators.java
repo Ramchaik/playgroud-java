@@ -1,4 +1,5 @@
-package operators;
+package introduction.operators;
+
 
 public class ComparisonOperators {
   public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package introToPackages;
+package oops.introToPackages;
 
 class Cat {
   boolean hasFur;

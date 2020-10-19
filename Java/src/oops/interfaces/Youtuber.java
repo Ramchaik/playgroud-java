@@ -1,4 +1,4 @@
-package interfaces;
+package oops.interfaces;
 
 public abstract interface Youtuber extends VideoEditor {
 

@@ -1,4 +1,4 @@
-package introToPackages.packages.models;
+package oops.introToPackages.packages.models;
 
 public class Teacher {
 

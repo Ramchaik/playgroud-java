@@ -1,4 +1,4 @@
-package exceptionHandling;
+package oops.exceptionHandling;
 
 public class MainClass {
   public static void main(String[] args) {

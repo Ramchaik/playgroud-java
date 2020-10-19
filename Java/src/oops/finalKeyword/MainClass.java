@@ -1,4 +1,4 @@
-package finalKeyword;
+package oops.finalKeyword;
 
 public class MainClass {
   final String n = "raju"; // Need to initialize the final class varialbe

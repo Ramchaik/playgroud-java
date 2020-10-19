@@ -1,4 +1,4 @@
-package arraysAndStrings;
+package questions.arraysAndStrings;
 import java.util.Scanner;
 
 public class RotateMatrix {

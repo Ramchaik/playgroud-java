@@ -1,4 +1,4 @@
-package abstraction;
+package oops.abstraction;
 
 public class RepairCar {
   public static void repairCar(Car car) {

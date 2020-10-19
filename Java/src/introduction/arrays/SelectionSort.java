@@ -1,4 +1,4 @@
-package arrays;
+package introduction.arrays;
 
 public class SelectionSort {
   public static void main(String[] args) {

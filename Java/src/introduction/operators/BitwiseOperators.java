@@ -1,4 +1,4 @@
-package operators;
+package introduction.operators;
 
 public class BitwiseOperators {
 

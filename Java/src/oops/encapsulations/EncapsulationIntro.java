@@ -1,4 +1,4 @@
-package encapsulations;
+package oops.encapsulations;
 
 /**
  * EncapsulationIntro

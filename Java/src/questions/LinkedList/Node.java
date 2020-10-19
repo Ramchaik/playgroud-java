@@ -1,4 +1,4 @@
-package LinkedList;
+package questions.linkedList;
 
 public class Node<T> {
   T data;

@@ -1,7 +1,7 @@
-package introToPackages.packages;
+package oops.introToPackages.packages;
 
-import introToPackages.packages.models.Student;
-import introToPackages.packages.models.Teacher;
+import oops.introToPackages.packages.models.Student;
+import oops.introToPackages.packages.models.Teacher;
 
 /**
  * MainClass

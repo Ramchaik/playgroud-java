@@ -1,4 +1,4 @@
-package LinkedList;
+package questions.linkedList;
 
 import java.util.HashSet;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package polymorphism;
+package oops.polymorphism;
 
 public class Animal {
   

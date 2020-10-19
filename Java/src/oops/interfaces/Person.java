@@ -1,4 +1,4 @@
-package interfaces;
+package oops.interfaces;
 
 public class Person implements Student, Youtuber {
 

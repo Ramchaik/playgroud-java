@@ -1,6 +1,7 @@
-package LinkedList;
+package questions.linkedList;
 
 import java.util.Scanner;
+import questions.linkedList.LinkedListNode;
 
 public class DeleteMiddleNode {
   public static void main(String[] args) {

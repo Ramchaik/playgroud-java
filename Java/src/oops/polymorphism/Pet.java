@@ -1,4 +1,4 @@
-package polymorphism;
+package oops.polymorphism;
 
 public class Pet extends Animal {
   public String name = "Dobby";

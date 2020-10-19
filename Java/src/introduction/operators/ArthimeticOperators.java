@@ -1,4 +1,4 @@
-package operators;
+package introduction.operators;
 
 public class ArthimeticOperators {
   public static void main(String[] args) {

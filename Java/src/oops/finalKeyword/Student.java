@@ -1,4 +1,4 @@
-package finalKeyword;
+package oops.finalKeyword;
 
 public final class Student {
   final int rollNo;

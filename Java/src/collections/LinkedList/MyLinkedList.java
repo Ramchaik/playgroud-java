@@ -1,3 +1,5 @@
+package collections.linkedList;
+
 public class MyLinkedList<E> {
   Node<E> head;
 
@@ -59,7 +61,7 @@ public class MyLinkedList<E> {
     }
   }
 
-  static class Node<E> {
+  public static class Node<E> {
     E data;
     Node<E> next;
 

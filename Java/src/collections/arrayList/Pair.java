@@ -17,6 +17,7 @@
  /**
   *   Class with generics
   */
+package collections.arrayList;
 
   public class Pair<X, Y> {
     X x;

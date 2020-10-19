@@ -1,4 +1,4 @@
-package dataTypes;
+package introduction.dataTypes;
 
 public class DataTyeps {
   public static void main(String[] arg) {

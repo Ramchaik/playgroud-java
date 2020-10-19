@@ -1,4 +1,4 @@
-package singleton;
+package oops.singleton;
 
 public class AppConfig {
   private static AppConfig appConfig = null;

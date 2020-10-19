@@ -1,4 +1,4 @@
-package staticKeyword;
+package oops.staticKeyword;
 
 public class A {
   class B {

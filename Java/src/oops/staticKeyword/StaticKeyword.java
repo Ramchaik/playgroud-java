@@ -1,7 +1,7 @@
-package staticKeyword;
+package oops.staticKeyword;
 
-import staticKeyword.A.B;
-import staticKeyword.A.C;
+import oops.staticKeyword.A.B;
+import oops.staticKeyword.A.C;
 
 public class StaticKeyword {
   static {

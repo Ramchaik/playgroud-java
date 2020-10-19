@@ -1,3 +1,6 @@
+package collections.vectorAndStacks;
+
+import collections.linkedList.MyLinkedList;
 public class MyStack<T> {
   private MyLinkedList<T> list = new MyLinkedList<>();
 

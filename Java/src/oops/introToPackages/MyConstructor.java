@@ -1,4 +1,4 @@
-package introToPackages;
+package oops.introToPackages;
 
 class Vehicle {
   int wheels;

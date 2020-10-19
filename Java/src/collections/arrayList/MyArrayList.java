@@ -3,6 +3,7 @@
  * MyArrayList
  */
 
+package collections.arrayList;
 import java.util.*;
 
 public class MyArrayList {
